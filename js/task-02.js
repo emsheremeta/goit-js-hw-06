@@ -17,11 +17,12 @@ const ingredients = [
   });
   document.querySelector('#ingredients').append(...elements);
   */
+ const item = document.querySelector('#ingredients');
  const elements = ingredients.map (ingredient => {
    const elementLi = document.createElement('li');
    elementLi.className = 'item';
    elementLi.innerHTML = ingredient;
    return elementLi;
  })
- document.querySelector('#ingredients').append(...elements);
+ item.append(...elements);
  console.log(elements);
